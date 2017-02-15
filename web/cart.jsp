@@ -14,12 +14,13 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <% boolean loggedIn = true; %>
 <% int numItems = 3; %>
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="css/bookstore.css">
-    <title>Eric's Sports Books - Categories</title>
+    <title>Eric's Sports Books - Cart</title>
 </head>
 <body>
 <div id="main">
@@ -37,13 +38,6 @@
                 <img src="images/rsz_logo_text.gif" alt="Eric's Sport's Books">
             </a>
         </div>
-
-        <form id="searchboxForm" action="#">
-            <input id="searchbox" type="text" name="categorySearch">
-            <input id="searchButton" type="image"
-                   src="images/rsz_search_image.jpg" alt="search button">
-        </form>
-
         <div id="cartIcon">
             <a href="cart.jsp">
                 <img src="images/rsz_shopping_cart.gif"
@@ -57,12 +51,18 @@
             <button type="button" ><% if (loggedIn) { %> logout <% } else { %> login <% }%></button>
         </div>
 
+        <form id="searchboxForm" action="category.jsp">
+            <input id="searchbox" type="text" name="categorySearch">
+            <input id="searchButton" type="image"
+                   src="images/rsz_search_image.jpg" alt="search button">
+        </form>
+
     </div>
 
     <div id="cartSummary">
         <div class="cartSummaryText">
             <p>Shopping Cart<br>
-                You currently have x number of items in your cart</p>
+                You currently have <%=numItems%> items in your cart</p>
             <hr>
         </div>
         <table>

@@ -48,9 +48,39 @@ hr {
 
 #logoText {
     position: relative;
+    margin-top:30px;
     margin-left: 160px;
     display: inline-block;
     z-index: 10;
+}
+
+
+#cartItemCount {
+    font-weight: bold;
+    color: orangered;
+    font-size: 20px;
+    display: inline-block;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 105px;
+    z-index: 10;
+}
+
+#cartIcon {
+    display: inline-block;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 80px;
+    z-index: 10;
+}
+
+#loginToggle {
+    display: inline-block;
+    position: absolute;
+    margin-left: 155px;
+    margin-top: 15px;
+    z-index: 10;
+    color: black
 }
 
 #searchboxForm {
@@ -74,36 +104,6 @@ hr {
 #searchButton {
     float: left;
     border-radius: 8px;
-}
-
-/* elements on the right side of the header */
-
-#cartItemCount {
-    font-weight: bold;
-    color: orangered;
-    font-size: 20px;
-    display: inline-block;
-    position: absolute;
-    margin-top: -5px;
-    margin-left: -22px;
-    z-index: 10;
-}
-
-#cartIcon {
-    display: inline-block;
-    position: relative;
-    margin-top: 0;
-    margin-left: 630px;
-    z-index: 10;
-}
-
-#loginToggle {
-    display: inline-block;
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 20px;
-    z-index: 10;
-    color: black
 }
 
 /* elements in the footer */
