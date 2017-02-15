@@ -41,46 +41,24 @@ hr {
     background: white;
 }
 
-/* header sections */
-
-/* left and right header sections */
-/* left header is empty, but allows logo text and search box form */
-/* to easily be centered */
-
-#leftHeader {
-    float: left;
-    height: 150px;
-    width: 160px;
-    font-size: 20px;
-}
-
-#rightHeader {
-    float: right;
-    height: 150px;
-    width: 160px;
-    font-size: 20px;
-    text-align: center;
-    color: #232f3e;
-}
-
 #logo {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
 }
 
 #logoText {
     position: relative;
-    padding-top: 50px;
-    font-family: Magneto, serif;
-    font-weight: bold;
-    font-size: 46px;
-    color: red;
-    /*    border: 2px solid yellow;*/
-    z-index: 1;
+    margin-left: 160px;
+    display: inline-block;
+    z-index: 10;
 }
 
 #searchboxForm {
-    float: left;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 160px;
+    display: inline-block;
+    z-index: 10;
 }
 
 #searchbox {
@@ -100,21 +78,32 @@ hr {
 
 /* elements on the right side of the header */
 
-#loginToggle {
-    margin-top: 15px;
-    display: inline-block;
-}
-
 #cartItemCount {
-    float: left;
-    padding-top: 15px;
     font-weight: bold;
     color: orangered;
-    font-size: 16px;
+    font-size: 20px;
+    display: inline-block;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: -22px;
+    z-index: 10;
 }
 
 #cartIcon {
-    float: left;
+    display: inline-block;
+    position: relative;
+    margin-top: 0;
+    margin-left: 630px;
+    z-index: 10;
+}
+
+#loginToggle {
+    display: inline-block;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    z-index: 10;
+    color: black
 }
 
 /* elements in the footer */

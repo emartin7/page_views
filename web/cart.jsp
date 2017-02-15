@@ -18,36 +18,18 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/test.css">
-    <title>Eric's Sports Books - Cart</title>
+    <link rel="stylesheet" type="text/css" href="css/bookstore.css">
+    <title>Eric's Sports Books - Categories</title>
 </head>
 <body>
 <div id="main">
 
     <div id="header">
+
         <div id="logo">
             <a href="index.jsp">
                 <img src="images/rsz_logo.jpg" alt="Eric's Bookstore logo">
             </a>
-        </div>
-
-        <div id="leftHeader">
-        </div>
-
-        <div id="rightHeader">
-            <div id="cartItemCount">
-                <%= numItems%>
-            </div>
-            <div id="cartIcon">
-                <a href="#">
-                    <img src="images/rsz_shopping_cart.gif"
-                         alt="shopping cart icon">
-                </a>
-            </div>
-            <div id="loginToggle">
-                <!-- toggle-->
-                <% if (loggedIn) { %> logout <% } else { %> login <% }%>
-            </div>
         </div>
 
         <div id="logoText">
@@ -62,6 +44,18 @@
                    src="images/rsz_search_image.jpg" alt="search button">
         </form>
 
+        <div id="cartIcon">
+            <a href="cart.jsp">
+                <img src="images/rsz_shopping_cart.gif"
+                     alt="shopping cart icon">
+            </a>
+        </div>
+        <div id="cartItemCount">
+            <%= numItems%>
+        </div>
+        <div id="loginToggle">
+            <button type="button" ><% if (loggedIn) { %> logout <% } else { %> login <% }%></button>
+        </div>
 
     </div>
 
@@ -93,9 +87,9 @@
                         </a>
                     </div>
                     <div class="plusMinusButtons">
-                    <a href="#">
-                        <img src="images/plus_button.png" alt="add another one">
-                    </a>
+                        <a href="#">
+                            <img src="images/plus_button.png" alt="add another one">
+                        </a>
                     </div>
                 </td>
             </tr>
